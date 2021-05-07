@@ -1,0 +1,59 @@
+{
+  "name": "@esri/eslint-plugin-calcite-components",
+  "version": "0.1.0",
+  "description": "ESLint rules for @esri/calcite-components",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
+  "scripts": {
+    "build": "tsc -p . && rollup -c",
+    "test": "jest",
+    "version": "npm run build",
+    "release": "np --no-release-draft",
+    "lint": "eslint --fix --ext .ts,.tsx ./src"
+  },
+  "dependencies": {
+    "airbnb": "0.0.2",
+    "eslint-utils": "^2.0.0",
+    "tsutils": "^3.0.0",
+    "uninstall": "0.0.0"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": "^2.23.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint": "^6.0.0",
+    "typescript": "^3.8.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^6.1.2",
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "~4.24.0",
+    "@typescript-eslint/parser": "~4.24.0",
+    "eslint": "~7.26.0",
+    "eslint-config-airbnb": "~18.2.1",
+    "eslint-plugin-header": "~3.1.1",
+    "eslint-plugin-import": "~2.23.2",
+    "eslint-plugin-jsx-a11y": "~6.4.1",
+    "eslint-plugin-react": "~7.23.2",
+    "eslint-plugin-react-hooks": "~4.2.0",
+    "eslint-utils": "^2.0.0",
+    "jest": "^25.1.0",
+    "jest-cli": "^25.1.0",
+    "np": "^6.2.0",
+    "rollup": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "stencil-eslint-core": "~0.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Esri/calcite-components-eslint-plugin.git"
+  },
+  "license": "Apache-2.0"
+}
